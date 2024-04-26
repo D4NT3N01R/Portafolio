@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scales=1.0">
+        <title>Portafolio</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <header>
+            <section class="nav_cont">
+                <h1 class="myname">Johann Andres</h1>
+                <nav class="nav">
+                    <ul class="lista-de-nav">
+                        <li class="nav_seccion"><a href="#sobremi">Sobre mi</a></li>
+                        <li class="nav_seccion"><a href="#skills">Skills</a></li>
+                        <li class="nav_seccion"><a href="#hobbies">Hobbies</a></li>
+                        <li class="nav_seccion"><a href="#formacion">Formación</a></li>
+                        <li class="nav_seccion"><a href="#proyectos">Experiencia en programación</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section class="presentacion">
+                <div class="elementos_presentacion">
+                    <div class="container row">
+                    <div class="texto">
+                       <h2>Hola, soy goku</h2>
+                       <p>Tengo 20 años, nacido en México y estoy en formación para ser ingeniero en sistemas computacionales. </p> 
+                    </div>
+                    <div class="imagen">
+                        <img src="imgs/foto-perfil.jpeg">
+                    </div>
+                </div>
+                <!-- Redes sociales -->
+                <ul class="redes">
+                    <li class="red"><a target="_blank" href="https://www.instagram.com/noir_inori/"><img src="imgs/instagram.png"></a></li>
+                    <li class="red"><a target="_blank" href="https://github.com/D4NT3N01R"><img src="imgs/github.png"></a></li>
+
+                </ul>
+              </div>
+            </section>
+            <section id="sobremi" class="about_me">
+                <div class="container">
+                <div class="texto">
+                    <h2>Sobre mi...</h2>
+                    <p>Soy un aficionado de la tecnología y el desarrollo tecnologico, con el objetivo de vivir profesionalmente de este mundo binario.
+                    Mi objetivo principal es dominar el front-end y el analisis de datos. 
+                    Siempre he estado en contacto con la programación y pasado por diferentes lenguajes de programación para diferentes aplicaciones.</p>
+                </div>
+                </div>
+            </section>
+            <section id="skills" class="habilidades_cont">
+                <div class="container row">
+                    <div class="texts_skills">
+                        <h2>Skills</h2>
+                        <ul class="skills_container_list">
+                        <li class="skill"><img src="imgs/js.png">JavaScript</li>
+                        <li class="skill"><img src="imgs/css.png">CSS 3</li>
+                        <li class="skill"><img src="imgs/html.png">HTML 5</li>
+                        </ul>
+                        
+                     
+                    </div>
+                </div>
+            </section>
+            <section id="hobbies" class="hobbies_cont">
+                <div class="container row">
+                    <div class="text_hobbies">
+                        <h2>Hobbies</h2>
+                        <ul class="hobbies_list">
+                            <li class="hobbie"><img src="imgs/book.png">Leer</li>
+                            <li class="hobbie"><img src="imgs/exercise.png">Hacer ejercicio</li>
+                            <li class="hobbie"><img src="imgs/music.png">Escuchar música</li>
+                            <li class="hobbie"><img src="imgs/television.png">Ver series</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="formacion" class="formacion_cont">
+                <div class="container row">
+                    <div class="text_formacion">
+                        <h2>Formación</h2>
+                        <ul class="Formation_list">
+                            <li class="formation_item"><img src="imgs/UVM.png">Ing. Sistemas Computacionales</li>
+                            <li class="formation_item"><img src="imgs/aluraoracle.png">Formación en front-end</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="proyectos" class="projects_cont">
+                <div class="text_proyectos">
+                    <h2>Proyectos</h2>
+                </div>
+                <div class="project_list_cont">
+                    <div class="project1">
+                        <div class="titleproject">
+                            <h1>Encriptador</h1>
+                            <h6 class="subtitulo"> (Terminado) </h6>
+                            <p class="detalles">Encriptador y desencritador de texto</p>
+                            <div class="btnRepodemo">
+                                <a target="_blank" href="https://github.com/D4NT3N01R/Encriptador">
+                                    <span>Repositorio</span>
+                                </a>
+                                <a target="_blank" href="https://d4nt3n01r.github.io/Encriptador/">
+                                    <span> Demo </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project2">
+                        <div class="titleproject">
+                            <h1>Juego 'Adivina el numero'</h1>
+                            <h6 class="subtitulo"> (Terminado) </h6>
+                            <p class="detalles">Adivinar un numero del 1 al 10</p>
+                            <div class="btnRepodemo">
+                                <a target="_blank" href="https://github.com/D4NT3N01R/Jueguito">
+                                    <span>Repositorio</span>
+                                </a>
+                                <a target="_blank" href="https://d4nt3n01r.github.io/Jueguito/">
+                                    <span> Demo </span>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section class="contact_section">
+                <div class="container">
+                    <div class="texto_contact">
+                        <h2> ¿Me quieres contactar?</h2>
+                        <p> Me pondre en contacto con usted lo antes posible</p>
+                    </div>
+                    <div class="contact_cont">
+                       
+                        <form class="form_cont" onsubmit="validarCampos(event)">
+
+                            <div class="form_cont_texts">
+            
+                                <label for="nombreyapellido">Nombre y apellido</label>
+                                <p id="alert_nombre" for="nombreapellido">El campo nombre esta vacio. Ingrese su nombre por favor</p>
+                                <input type="text" id="nombreyapellido" class="input_padron">
+            
+                                <label for="correoelect">Correo Electronico</label>
+                                <p id="alert_correo" for="correoelectronico">El campo esta vacío y debe estar en el formato e-mail debe estar en el formato: email@dominio.com .</p>
+                                <input type="email" id="CorreElecr" class="input_padron" placeholder="email@dominio.com"> 
+            
+                                <label for="Tema">Tema</label>
+                                <p id="alert_asunto" for="Tema">El campo está vacio.</p>
+                                <input type="asunto" id="theme" class="input_padron">
+            
+                                <label for="mensaje">Mensaje</label>
+                                <p id="alert_msj" for="mensaje">El campo mensaje está vacio.</p>
+                                <textarea name="" id="mensaje" cols="6" rows="10" class="input_padron"></textarea>
+                            
+                            </div>
+        
+                            <input type="submit" id="enviarbtn" value="Enviar" class="btn_enviar"></input>
+            
+                        </form>
+                    
+                    </div>
+                </div>
+               
+                
+
+            </section>
+        </main>
+        <footer>
+            <p class="Copyright"> &copy Pagina Hecha por Johann Andrés</p>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+
+</html>
