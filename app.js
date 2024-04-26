@@ -40,7 +40,6 @@ function verificarInputs() {
     return allInputsAreOk;
 }
 
-// Limpiar el formulario y mostrar mensaje de envío
 
 // Validar campos antes de enviar
 function validarCampos(event) {
